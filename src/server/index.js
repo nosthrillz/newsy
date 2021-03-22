@@ -9,12 +9,6 @@ const app = express();
 
 app.use(express.static("dist"));
 
-// const https = require("https");
-// const fs = require('fs');
-// const key = fs.readFileSync('./key.pem');
-// const cert = fs.readFileSync('./cert.pem');
-// const server = https.createServer({key: key, cert: cert }, app);
-
 // designates what port the app will listen to for incoming requests
 app.listen(process.env.PORT, function () {
   console.log(`Server listening on port ${process.env.PORT}!`);

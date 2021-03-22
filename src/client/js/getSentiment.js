@@ -1,6 +1,7 @@
 /* Makes request to MeaningCloud with parameters*/
 
 import { updateUI } from "./updateUI";
+import { buildUrl } from "./buildUrl";
 
 export async function getSentiment(data) {
   const response = await fetch(buildUrl(data), {
@@ -16,11 +17,6 @@ export async function getSentiment(data) {
     console.log(error);
   }
 }
-
-// create URI based on data
-const buildUrl = (data) => {
-  return `https://api.meaningcloud.com/sentiment-2.1?key=${data.key}&lang=${data.lang}&${data.content}&model=${data.model}`;
-};
 
 // clear form results
 const clearResults = () => {

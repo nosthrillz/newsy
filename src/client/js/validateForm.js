@@ -1,10 +1,9 @@
-export function validateForm() {
-  const urlInput = document.querySelector("#url").value;
-  const txtInput = document.querySelector("#txt").value;
+export function validateForm(urlInput, txtInput) {
   let err = "";
 
   if (urlInput == "" && txtInput == "") err = "Paste a URL or text to assess.";
-  else if (!validateUrl(urlInput)) err = "Paste a valid URL.";
+  else if (txtInput == "")
+    if (!validateUrl(urlInput)) err = "Paste a valid URL.";
 
   return err;
 }

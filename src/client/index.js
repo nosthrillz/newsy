@@ -23,9 +23,14 @@ document.querySelector("link[rel~='icon']").href = favicon;
 document.querySelector("#form").addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let invalid = validateForm();
+  const urlInput = document.querySelector("#url").value;
+  const txtInput = document.querySelector("#txt").value;
+  const formText = document.querySelector("#txt").value;
+  const formURL = document.querySelector("#url").value;
 
-  invalid.length > 0 ? alert(invalid) : handleSubmit();
+  const invalid = validateForm(urlInput, txtInput);
+
+  invalid == "" ? handleSubmit(formText, formURL) : alert(invalid);
 });
 
 // TODO: Jest tests for each js file
