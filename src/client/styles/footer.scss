@@ -1,0 +1,12 @@
+@import "variables";
+@import "mixins";
+
+footer {
+    background: $bkg-darkest;
+    height: 100px;
+    @include centerFlex;
+    flex-direction: column;
+    p {
+        text-align: center;
+    }
+}

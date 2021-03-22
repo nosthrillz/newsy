@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import "variables";
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: $bkg-mid;
+    font-family: 'Open sans', sans-serif;
+    line-height: normal;
+    color: $text-light;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+

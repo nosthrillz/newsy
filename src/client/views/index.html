@@ -3,40 +3,49 @@
     <head>
         <meta charset="utf-8">
         <title>Test</title>
-        <link rel="stylesheet" href="/styles/resets.css">
-        <link rel="stylesheet" href="/styles/base.css">
-        <link rel="stylesheet" href="/styles/header.css">
-        <link rel="stylesheet" href="/styles/form.css">
-        <link rel="stylesheet" href="/styles/footer.css">
+        <link rel="icon" href=""/>
     </head>
 
     <body>
 
         <header>
-            <div class="">
-                Logo
-            </div>
-            <div class="">
-                navigation
-            </div>
+            <img src=""/>
+            <h1>Newsy</h1>
+            <h2>The news analyzer</h2>
         </header>
 
         <main>
             <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                <form id="form" class="">
+                    <label for="input">Paste the URL to the website</label>
+                    <input id="url" name="input" value="" placeholder="URL">
+                    <p>OR</p>
+                    <label for="input">Paste plain text</label>
+                    <textarea id="txt" name="input2" value="" placeholder="Plain text"></textarea>
+                    <input type="submit" name="" value="Get article sentiment">
                 </form>
             </section>
 
             <section>
-                <strong>Form Results:</strong>
-                <div id="results"></div>
+                <div id="results">
+                    <h1>Sentiment analysis results</h1>
+                    <h2>Agreement</h2>
+                    <p></p>
+                    <h2>Subjectivity</h2>
+                    <p></p>
+                    <h2>Irony</h2>
+                    <p></p>
+                    <h2>Confidence</h2>
+                    <p></p>
+                </div>
             </section>
+
         </main>
 
         <footer>
-            <p>This is a footer</p>
+            <p>Udacity Front End Development Nanodegree</p>
+            <p>Project 4 - Webpack, Sass, Service Workers, Jest</p>
+            <p>&copy; Ilie Bogdan-Mihai</p>
         </footer>
 
     </body>

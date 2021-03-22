@@ -1,0 +1,40 @@
+@import "variables";
+@import "mixins";
+
+form {
+    @include section;
+
+    label {
+        color: $text-accent;
+        font-size: 1.1em;
+        align-self: flex-start;
+    }
+    p {
+        color: $text-light;
+        font-size: 1.3em;
+        font-style: italic;
+    }
+    input, textarea {
+        padding: 5px 10px;
+        width: 100%;
+        line-height: 20px;
+        margin: 10px 0;
+        &[type="submit"] {
+            background: $accent1;
+            color: $text-light;
+            width: 250px;
+            height: 60px;
+            border-radius: 10px;
+            font-size: 1.3em;
+            cursor: pointer;
+            &:hover {
+                background: $accent2;
+            }
+        }
+    }
+    textarea {
+        min-height: 150px;
+        width: 100%;
+        max-width: 100%;
+    }
+}

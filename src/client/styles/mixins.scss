@@ -1,0 +1,14 @@
+@mixin centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin section {
+    @include centerFlex;
+    border-radius: 10px;
+    box-shadow: $bkg-darkest 0 0 10px 0px;
+    padding: 40px;
+    flex-direction: column;
+    background: $bkg-dark;
+}

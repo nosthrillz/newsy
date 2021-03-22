@@ -1,16 +1,15 @@
-function handleSubmit(event) {
-    event.preventDefault()
+/* Handles form submission */
 
-    // check what text was put into the form field
-    let formText = document.getElementById('name').value
-    checkForName(formText)
+import { buildParams } from "./buildParams";
+import { getSentiment } from "./getSentiment";
 
-    console.log("::: Form Submitted :::")
-    fetch('http://localhost:8080/test')
-    .then(res => res.json())
-    .then(function(res) {
-        document.getElementById('results').innerHTML = res.message
-    })
+export async function handleSubmit() {
+  const params = {};
+
+  await buildParams(params);
+  try {
+    getSentiment(params); // make request to MeaningCloud
+  } catch (error) {
+    console.log(error);
+  }
 }
-
-export { handleSubmit }
