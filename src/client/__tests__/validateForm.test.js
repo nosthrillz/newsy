@@ -1,6 +1,5 @@
 import { validateForm } from "../js/validateForm";
 
-// validateForm.js
 describe("Validate form inputs", () => {
   const urlEmpty = "";
   const urlCorrect = "https://www.google.com";

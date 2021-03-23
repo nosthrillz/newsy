@@ -2,7 +2,7 @@
 
 ### Your project must:
 
-- [ ] Be set up with Webpack, Express, Node, and Sass, and Service Workers
+- [ x ] Be set up with Webpack, Express, Node, and Sass, and Service Workers
 
 - [ x ] Have separate dev and prod configurations for Webpack
 
@@ -18,4 +18,4 @@
 
 - [ x ] Response from the API must be added to the view for a user to see 
 
-- [ ] Be able to show content offline
+- [ x ] Be able to show content offline

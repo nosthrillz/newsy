@@ -1,7 +1,6 @@
 import "regenerator-runtime/runtime";
 import { buildParams } from "../js/buildParams";
 
-// buildParams.js
 describe("Build API call parameters", () => {
   const textEmpty = "";
   const text = "testText";

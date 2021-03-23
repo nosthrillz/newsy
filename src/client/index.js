@@ -33,6 +33,5 @@ document.querySelector("#form").addEventListener("submit", (e) => {
   invalid == "" ? handleSubmit(formText, formURL) : alert(invalid);
 });
 
-// TODO: Jest tests for each js file
 // TODO: README
 // TODO: Setup/Instructions
